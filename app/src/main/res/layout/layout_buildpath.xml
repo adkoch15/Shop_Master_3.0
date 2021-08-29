@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mainImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/component1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="176dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toStartOf="@+id/mainImage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/component2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="36dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/component7"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="68dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/component3" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/component3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="36dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainImage" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/component4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/component1" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/component5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="68dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/component1" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/component6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="68dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/component3" />
+
+    <TextView
+        android:id="@+id/image_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_toEndOf="@+id/mainImage"
+        android:text="Item Name"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/mainImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/component1_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/component1"
+        android:text="Item Name"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/component1"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <TextView
+        android:id="@+id/component2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/component2"
+        android:text="Item Name"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/component2"
+        tools:layout_editor_absoluteX="163dp" />
+
+    <TextView
+        android:id="@+id/component3_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/component3"
+        android:text="Item Name"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/component3"
+        tools:layout_editor_absoluteX="268dp" />
+
+    <TextView
+        android:id="@+id/component4_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/component4"
+        android:text="Item Name"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/component4"
+        tools:layout_editor_absoluteX="12dp" />
+
+    <TextView
+        android:id="@+id/component5_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/component5"
+        android:text="Item Name"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/component5"
+        tools:layout_editor_absoluteX="104dp" />
+
+    <TextView
+        android:id="@+id/component6_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/component6"
+        android:text="Item Name"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/component6"
+        tools:layout_editor_absoluteX="220dp" />
+
+    <TextView
+        android:id="@+id/component7_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/component7"
+        android:text="Item Name"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/component7"
+        tools:layout_editor_absoluteX="312dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

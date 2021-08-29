@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemMenu"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Item Index by Stat Type"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:id="@+id/title"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#6d7a93"
+        android:text="All Items"
+        android:layout_margin="10dp"
+        android:id="@+id/all_items"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/all_items"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#256579"
+        android:text="Attack"
+        android:id="@+id/attack"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attack"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#6d7a93"
+        android:text="Attack Speed"
+        android:id="@+id/attack_speed"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attack_speed"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#256579"
+        android:text="Magic"
+        android:id="@+id/magic"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/magic"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#6d7a93"
+        android:text="Defense"
+        android:id="@+id/defense"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/defense"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#256579"
+        android:text="Movement"
+        android:id="@+id/movement"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movement"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#6d7a93"
+        android:text="Tools"
+        android:id="@+id/tools"
+        android:layout_margin="10dp"/>
+
+
+</RelativeLayout>

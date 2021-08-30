@@ -1,9 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StatDictionary">
+    tools:context=".ItemMenu"
+    android:background="@color/black">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Stat Dictionary"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:id="@+id/title"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#6d7a93"
+        android:text="Attack Damage"
+        android:layout_margin="10dp"
+        android:id="@+id/ad"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ad"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#256579"
+        android:text="Attack Speed"
+        android:id="@+id/as"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/as"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#6d7a93"
+        android:text="Critical Strike"
+        android:id="@+id/crit"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crit"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#256579"
+        android:text="Life Steal"
+        android:id="@+id/ls"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ls"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#6d7a93"
+        android:text="Armor Penetration / Lethality"
+        android:id="@+id/armor_pen"
+        android:layout_margin="10dp"/>
+
+</RelativeLayout>

@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     //Main Activity Buttons
     private Button itemMenu;
     private Button champions;
+    private Button statDictionary;
 
     //Widget
     RecyclerView recyclerView;
@@ -57,13 +58,25 @@ public class MainActivity extends AppCompatActivity {
                 initImageBitmaps();
             }
         });
-        //initImageBitmaps();
-
+        //Stats button click
+        statDictionary = (Button) findViewById(R.id.stats);
+        statDictionary.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                setContentView(R.layout.activity_stat_dictionary);
+                openStatMenu();
+            }
+        });
         Log.d(TAG, "onCreate: started");
     }
 
     public void openItemMenu(){
         Intent intent = new Intent(this, ItemMenu.class);
+        startActivity(intent);
+    }
+
+    public void openStatMenu(){
+        Intent intent = new Intent(this, StatDictionary.class);
         startActivity(intent);
     }
 
